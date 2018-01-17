@@ -1,0 +1,36 @@
+<html ng-app="app-issue">
+<body>
+  <div class="container">
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" required [(ngModel)] = "model.name" name="name"/>
+      </div>
+      <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea autofocus ng-maxlength="800" wrap="true" name="description" [(ngModel)] = "model.description"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="category">Category:</label>
+        <input type="text" class="form-control" id="category" required [(ngModel)] = "model.category" name="category"/>
+      </div>
+      <div class="form-group">
+        <label for="priority">Priority:</label>
+      </div>
+      <div class="form-group">
+        <label for="customer">Customer:</label>
+      </div>
+      <div class="form-group">
+        <label for="assignedTo">Assigned:</label>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
+<!--
+  public name: string;
+  public description: string;
+  public category: string;
+  public isTopPriority: boolean;
+  public assignedTo: number;
+-->
