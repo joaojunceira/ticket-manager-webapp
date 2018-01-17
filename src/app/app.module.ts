@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule, MatCheckboxModule } from '@angular/material';
 import { RouterModule } from '@angular/router';
 
@@ -25,6 +25,7 @@ import { AppRoutingModule } from './/app-routing.module';
     BrowserModule,
     NoopAnimationsModule,
     FormsModule,
+    ReactiveFormsModule,
     MatButtonModule,
     MatCheckboxModule,
     AppRoutingModule,
@@ -33,4 +34,5 @@ import { AppRoutingModule } from './/app-routing.module';
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
